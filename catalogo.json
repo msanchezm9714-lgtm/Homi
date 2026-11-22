@@ -1,0 +1,799 @@
+{
+ "_ayuda": "Catálogo de Homi. Para agregar un depa: copia un objeto de \"depas\", cambia id (único, sin espacios), proyecto, broker y datos. Las fotos van en img/<proyecto.img>/<nombre>.jpg y se nombran sin extensión. m2 y mapa.lat/lng pueden quedar en null. Después corre: python3 export.py",
+ "fx": {
+  "MXN_por_USD": 18.5,
+  "actualizado": "2026-11 (CONFIRMAR)"
+ },
+ "brokers": {
+  "homi": {
+   "nombre": "Asesor Homi"
+  }
+ },
+ "proyectos": {
+  "la-selva": {
+   "nombre": "La Selva Residences",
+   "corto": "La Selva",
+   "img": "la-selva",
+   "ubicacion": {
+    "es": "Playa del Carmen, Quintana Roo",
+    "en": "Playa del Carmen, Quintana Roo"
+   },
+   "mapa": {
+    "q": "La Selva Residences, Playa del Carmen, Quintana Roo",
+    "lat": null,
+    "lng": null
+   },
+   "desarrollador": {
+    "nombre": "Urban Homes",
+    "stats": [
+     {
+      "n": "19",
+      "es": "años de experiencia",
+      "en": "years of experience"
+     },
+     {
+      "n": "26",
+      "es": "desarrollos construidos",
+      "en": "developments built"
+     },
+     {
+      "n": "+3,000",
+      "es": "unidades vendidas",
+      "en": "units sold"
+     }
+    ]
+   },
+   "amenidades": {
+    "es": [
+     "Pickleball",
+     "Cancha de pádel",
+     "Cancha deportiva",
+     "Área de asadores",
+     "Terraza bar",
+     "Gimnasio",
+     "Alberca familiar",
+     "Regaderas",
+     "Baños",
+     "Administración",
+     "Área de juegos",
+     "Vigilancia 24/7",
+     "Parque para mascotas",
+     "Estacionamiento para visitas"
+    ],
+    "en": [
+     "Pickleball",
+     "Padel court",
+     "Sports court",
+     "Barbecue area",
+     "Terrace bar",
+     "Community gym",
+     "Family pool",
+     "Showers",
+     "Restrooms",
+     "On-site administration",
+     "Children's play area",
+     "24/7 security",
+     "Pet park",
+     "Visitor parking"
+    ]
+   },
+   "areas": [
+    {
+     "src": "c1",
+     "es": [
+      "Alberca",
+      "Alberca familiar rodeada de vegetación"
+     ],
+     "en": [
+      "Pool",
+      "Family pool surrounded by greenery"
+     ]
+    },
+    {
+     "src": "p-terraza",
+     "es": [
+      "Terraza bar",
+      "Para convivir junto a la alberca"
+     ],
+     "en": [
+      "Terrace bar",
+      "A place to gather by the pool"
+     ]
+    },
+    {
+     "src": "c3",
+     "es": [
+      "Gimnasio",
+      "Gimnasio comunitario con cardio y máquinas de fuerza"
+     ],
+     "en": [
+      "Gym",
+      "Community gym with cardio and strength machines"
+     ]
+    },
+    {
+     "src": "c4",
+     "es": [
+      "Cancha de pádel",
+      "Cancha con cristal y vista a la zona verde"
+     ],
+     "en": [
+      "Padel court",
+      "Glass-walled court overlooking the green area"
+     ]
+    },
+    {
+     "src": "c5",
+     "es": [
+      "Cancha de pickleball",
+      "Canchas deportivas del conjunto"
+     ],
+     "en": [
+      "Pickleball court",
+      "Community sports courts"
+     ]
+    },
+    {
+     "src": "c2",
+     "es": [
+      "Cancha de fútbol",
+      "Pasto sintético para partidos entre vecinos"
+     ],
+     "en": [
+      "Soccer court",
+      "Synthetic turf for neighborhood games"
+     ]
+    },
+    {
+     "src": "p-cancha",
+     "es": [
+      "Cancha deportiva",
+      "Cancha multiusos"
+     ],
+     "en": [
+      "Sports court",
+      "Multi-use court"
+     ]
+    },
+    {
+     "src": "p-asadores",
+     "es": [
+      "Área de asadores",
+      "Para reuniones al aire libre"
+     ],
+     "en": [
+      "Barbecue area",
+      "For outdoor get-togethers"
+     ]
+    },
+    {
+     "src": "p-juegos",
+     "es": [
+      "Área de juegos",
+      "Juegos infantiles entre los árboles"
+     ],
+     "en": [
+      "Play area",
+      "Children's playground among the trees"
+     ]
+    },
+    {
+     "src": "p-pet",
+     "es": [
+      "Parque para mascotas",
+      "Espacio para tus mascotas"
+     ],
+     "en": [
+      "Pet park",
+      "A space for your pets"
+     ]
+    },
+    {
+     "src": "p-seguridad",
+     "es": [
+      "Acceso y vigilancia 24/7",
+      "Entrada controlada al conjunto"
+     ],
+     "en": [
+      "Entrance & 24/7 security",
+      "Controlled access to the community"
+     ]
+    }
+   ],
+   "galeria": [
+    {
+     "src": "p-alberca",
+     "cat": "comun",
+     "es": "Alberca familiar con camastros y sombrillas",
+     "en": "Family pool with loungers and umbrellas"
+    },
+    {
+     "src": "c0",
+     "cat": "comun",
+     "es": "Alberca con palapa al fondo",
+     "en": "Pool with a palapa in the background"
+    },
+    {
+     "src": "c1",
+     "cat": "comun",
+     "es": "Alberca rodeada de vegetación",
+     "en": "Pool surrounded by greenery"
+    },
+    {
+     "src": "c8",
+     "cat": "comun",
+     "es": "Vista aérea de la alberca entre la selva",
+     "en": "Aerial view of the pool among the trees"
+    },
+    {
+     "src": "c7",
+     "cat": "comun",
+     "es": "Vista aérea del conjunto, con canchas y áreas verdes",
+     "en": "Aerial view of the community, with courts and green areas"
+    },
+    {
+     "src": "c6",
+     "cat": "comun",
+     "es": "Edificios del conjunto entre la vegetación",
+     "en": "Community buildings among the greenery"
+    },
+    {
+     "src": "p-terraza",
+     "cat": "comun",
+     "es": "Terraza bar junto a la alberca",
+     "en": "Terrace bar next to the pool"
+    },
+    {
+     "src": "p-asadores",
+     "cat": "comun",
+     "es": "Área de asadores",
+     "en": "Barbecue area"
+    },
+    {
+     "src": "c3",
+     "cat": "comun",
+     "es": "Gimnasio comunitario con cardio y máquinas de fuerza",
+     "en": "Community gym with cardio and strength machines"
+    },
+    {
+     "src": "p-cancha",
+     "cat": "comun",
+     "es": "Cancha deportiva multiusos",
+     "en": "Multi-use sports court"
+    },
+    {
+     "src": "c2",
+     "cat": "comun",
+     "es": "Cancha de fútbol de pasto sintético",
+     "en": "Synthetic-turf soccer court"
+    },
+    {
+     "src": "p-pickleball",
+     "cat": "comun",
+     "es": "Cancha de pickleball",
+     "en": "Pickleball court"
+    },
+    {
+     "src": "c5",
+     "cat": "comun",
+     "es": "Canchas deportivas del conjunto",
+     "en": "Community sports courts"
+    },
+    {
+     "src": "p-padel",
+     "cat": "comun",
+     "es": "Cancha de pádel",
+     "en": "Padel court"
+    },
+    {
+     "src": "c4",
+     "cat": "comun",
+     "es": "Cancha de pádel con cristal y vista a la zona verde",
+     "en": "Glass-walled padel court overlooking the green area"
+    },
+    {
+     "src": "p-juegos",
+     "cat": "comun",
+     "es": "Área de juegos infantiles",
+     "en": "Children's play area"
+    },
+    {
+     "src": "p-pet",
+     "cat": "comun",
+     "es": "Parque para mascotas",
+     "en": "Pet park"
+    },
+    {
+     "src": "p-seguridad",
+     "cat": "comun",
+     "es": "Acceso al conjunto con vigilancia 24/7",
+     "en": "Community entrance with 24/7 security"
+    },
+    {
+     "src": "master-plan",
+     "cat": "planos",
+     "es": "Plano maestro del conjunto, con alberca, canchas y áreas verdes",
+     "en": "Community master plan, with pool, courts and green areas"
+    }
+   ],
+   "fotosProyecto": [
+    "p-alberca",
+    "p-terraza",
+    "c1",
+    "p-cancha",
+    "p-juegos",
+    "p-pet"
+   ]
+  }
+ },
+ "depas": [
+  {
+   "id": "la-selva-terra",
+   "proyecto": "la-selva",
+   "broker": "homi",
+   "nombre": "La Selva · Terra",
+   "modelo": "Terra",
+   "precio": 2397000,
+   "moneda": "MXN",
+   "rec": 2,
+   "banos": 2,
+   "est": 1,
+   "m2": null,
+   "es": {
+    "entrega": "Fase 3 · Entrega inmediata",
+    "corta": "Inmediata",
+    "tipo": "Quedan unidades en Fase 3 (Fases 1 y 2 vendidas)",
+    "resumen": "2 recámaras con vestidor en la principal, cocina integral equipada y terraza o balcón. Comunidad con alberca, gym y canchas.",
+    "descripcion": "Modelo Terra: recámara principal con vestidor y baño completo, recámara secundaria, sala-comedor, cocina integral equipada con barra de cuarzo, baño completo con vanity, área de servicio, terraza o balcón y estacionamiento para un vehículo.",
+    "pago": "Precios de octubre con descuento sobre el valor comercial. Consulta con un asesor las formas de pago y esquemas de financiamiento.",
+    "estCorto": "1 est.",
+    "estLargo": "1 vehículo"
+   },
+   "en": {
+    "entrega": "Phase 3 · Immediate delivery",
+    "corta": "Immediate",
+    "tipo": "Units still available in Phase 3 (Phases 1 and 2 sold out)",
+    "resumen": "2 bedrooms with a walk-in closet in the primary, a fully equipped integrated kitchen and a terrace or balcony. Community with pool, gym and sports courts.",
+    "descripcion": "Terra model: primary bedroom with walk-in closet and full bathroom, a secondary bedroom, open living-dining area, fully equipped integrated kitchen with quartz counter, full bathroom with vanity, utility area, terrace or balcony and parking for one vehicle.",
+    "pago": "October pricing, discounted from list price. Ask an advisor about payment terms and financing options.",
+    "estCorto": "1 space",
+    "estLargo": "1 vehicle"
+   },
+   "unidades": [
+    {
+     "n": "4N",
+     "lista": 2886000,
+     "desc": 489000,
+     "venta": 2397000
+    },
+    {
+     "n": "3N",
+     "lista": 2984000,
+     "desc": 495000,
+     "venta": 2489000
+    },
+    {
+     "n": "2N",
+     "lista": 3068000,
+     "desc": 413000,
+     "venta": 2655000
+    },
+    {
+     "n": "1N",
+     "lista": 3183000,
+     "desc": 392000,
+     "venta": 2791000
+    }
+   ],
+   "fotos": [
+    "d5",
+    "d0",
+    "d11",
+    "d17",
+    "d16",
+    "d18"
+   ],
+   "galeria": [
+    {
+     "src": "d5",
+     "cat": "depa",
+     "es": "Sala y comedor de concepto abierto, con piso tipo mármol y acabados en madera",
+     "en": "Open-plan living and dining area with marble-look flooring and wood finishes"
+    },
+    {
+     "src": "p-sala",
+     "cat": "depa",
+     "es": "Sala con ventanal hacia el área verde",
+     "en": "Living room with a large window onto the green space"
+    },
+    {
+     "src": "d2",
+     "cat": "depa",
+     "es": "Sala con persiana, aire acondicionado y TV",
+     "en": "Living room with roller shade, air conditioning and TV"
+    },
+    {
+     "src": "d8",
+     "cat": "depa",
+     "es": "Sala con mueble de TV en madera; al fondo, el comedor",
+     "en": "Living room with a wood media unit; dining area in the background"
+    },
+    {
+     "src": "d12",
+     "cat": "depa",
+     "es": "Sala y comedor con ventanal de piso a techo",
+     "en": "Living and dining area with a floor-to-ceiling window"
+    },
+    {
+     "src": "d22",
+     "cat": "depa",
+     "es": "Sala y comedor, vista general",
+     "en": "Living and dining area, general view"
+    },
+    {
+     "src": "p-comedor",
+     "cat": "depa",
+     "es": "Comedor para cuatro personas junto a la sala",
+     "en": "Four-seat dining area next to the living room"
+    },
+    {
+     "src": "d0",
+     "cat": "depa",
+     "es": "Comedor junto a la cocina integral",
+     "en": "Dining area next to the integrated kitchen"
+    },
+    {
+     "src": "d1",
+     "cat": "depa",
+     "es": "Comedor con barra de cocina al fondo",
+     "en": "Dining area with the kitchen counter in the background"
+    },
+    {
+     "src": "d4",
+     "cat": "depa",
+     "es": "Cocina abierta al comedor, con refrigerador",
+     "en": "Kitchen open to the dining area, with refrigerator"
+    },
+    {
+     "src": "d6",
+     "cat": "depa",
+     "es": "Comedor y sala con luz natural",
+     "en": "Dining and living areas with natural light"
+    },
+    {
+     "src": "d11",
+     "cat": "depa",
+     "es": "Cocina integral equipada con refrigerador, estufa y barra",
+     "en": "Fully equipped kitchen with refrigerator, stove and counter"
+    },
+    {
+     "src": "d14",
+     "cat": "depa",
+     "es": "Cocina con gabinetes en tono madera y barra de cubierta blanca",
+     "en": "Kitchen with wood-tone cabinets and a white-topped counter"
+    },
+    {
+     "src": "d7",
+     "cat": "depa",
+     "es": "Estufa y gabinetes altos y bajos de la cocina",
+     "en": "Stove and upper and lower kitchen cabinets"
+    },
+    {
+     "src": "d13",
+     "cat": "depa",
+     "es": "Barra de la cocina con tarja",
+     "en": "Kitchen counter with sink"
+    },
+    {
+     "src": "d15",
+     "cat": "depa",
+     "es": "Tarja doble con grifo flexible",
+     "en": "Double sink with flexible faucet"
+    },
+    {
+     "src": "p-rec-principal",
+     "cat": "depa",
+     "es": "Recámara principal",
+     "en": "Primary bedroom"
+    },
+    {
+     "src": "d3",
+     "cat": "depa",
+     "es": "Recámara principal con cabecera tapizada y pared a rayas",
+     "en": "Primary bedroom with upholstered headboard and striped accent wall"
+    },
+    {
+     "src": "d17",
+     "cat": "depa",
+     "es": "Recámara principal con iluminación cálida",
+     "en": "Primary bedroom with warm lighting"
+    },
+    {
+     "src": "d16",
+     "cat": "depa",
+     "es": "Walk-in closet con entrepaños, cajones y colgadores",
+     "en": "Walk-in closet with shelves, drawers and hanging rails"
+    },
+    {
+     "src": "p-rec-secundaria",
+     "cat": "depa",
+     "es": "Recámara secundaria",
+     "en": "Secondary bedroom"
+    },
+    {
+     "src": "d20",
+     "cat": "depa",
+     "es": "Recámara con clóset abierto y aire acondicionado",
+     "en": "Bedroom with open wardrobe and air conditioning"
+    },
+    {
+     "src": "d21",
+     "cat": "depa",
+     "es": "Recámara con ventana, persiana y aire acondicionado",
+     "en": "Bedroom with window, roller shade and air conditioning"
+    },
+    {
+     "src": "d18",
+     "cat": "depa",
+     "es": "Baño completo con regadera de cristal",
+     "en": "Full bathroom with glass-enclosed shower"
+    },
+    {
+     "src": "d19",
+     "cat": "depa",
+     "es": "Baño con lavabo sobre cubierta y regadera con mampara",
+     "en": "Bathroom with vessel sink on a countertop and glass-screen shower"
+    },
+    {
+     "src": "d9",
+     "cat": "depa",
+     "es": "Área de servicio con lavadero y calentador",
+     "en": "Utility area with wash sink and water heater"
+    },
+    {
+     "src": "d10",
+     "cat": "depa",
+     "es": "Área de servicio con instalaciones para lavadora",
+     "en": "Utility area with washing-machine hookups"
+    },
+    {
+     "src": "plano-terra",
+     "cat": "planos",
+     "es": "Plano del modelo Terra: 2 recámaras, 2 baños, cocina integral y terraza o balcón",
+     "en": "Terra floor plan: 2 bedrooms, 2 bathrooms, integrated kitchen and terrace or balcony"
+    }
+   ]
+  },
+  {
+   "id": "la-selva-amazonas",
+   "proyecto": "la-selva",
+   "broker": "homi",
+   "nombre": "La Selva · Amazonas",
+   "modelo": "Amazonas",
+   "precio": 2805000,
+   "moneda": "MXN",
+   "rec": 3,
+   "banos": 2,
+   "est": 2,
+   "m2": null,
+   "es": {
+    "entrega": "Fase 3 · Entrega inmediata",
+    "corta": "Inmediata",
+    "tipo": "Última unidad disponible en este modelo (4N)",
+    "resumen": "3 recámaras con vestidor en la principal, cocina integral equipada y terraza o balcón. La opción más amplia de la comunidad.",
+    "descripcion": "Modelo Amazonas: recámara principal con vestidor y baño completo, dos recámaras secundarias, sala-comedor, cocina integral equipada con barra de cuarzo, baño completo con vanity, área de servicio, terraza o balcón y estacionamiento para dos vehículos (aplica en planta baja).",
+    "pago": "Precio de octubre con descuento sobre el valor comercial. Consulta con un asesor las formas de pago y esquemas de financiamiento.",
+    "estCorto": "2 est.",
+    "estLargo": "2 vehículos (planta baja)"
+   },
+   "en": {
+    "entrega": "Phase 3 · Immediate delivery",
+    "corta": "Immediate",
+    "tipo": "Last unit available in this model (4N)",
+    "resumen": "3 bedrooms with a walk-in closet in the primary, a fully equipped integrated kitchen and a terrace or balcony. The roomiest option in the community.",
+    "descripcion": "Amazonas model: primary bedroom with walk-in closet and full bathroom, two secondary bedrooms, open living-dining area, fully equipped integrated kitchen with quartz counter, full bathroom with vanity, utility area, terrace or balcony and parking for two vehicles (ground floor only).",
+    "pago": "October pricing, discounted from list price. Ask an advisor about payment terms and financing options.",
+    "estCorto": "2 spaces",
+    "estLargo": "2 vehicles (ground floor)"
+   },
+   "unidades": [
+    {
+     "n": "4N",
+     "lista": 3538000,
+     "desc": 733000,
+     "venta": 2805000
+    },
+    {
+     "n": "3N",
+     "agotado": true
+    },
+    {
+     "n": "2N",
+     "agotado": true
+    },
+    {
+     "n": "1N",
+     "agotado": true
+    }
+   ],
+   "fotos": [
+    "d8",
+    "d22",
+    "d14",
+    "d21",
+    "d19",
+    "d7"
+   ],
+   "galeria": [
+    {
+     "src": "d5",
+     "cat": "depa",
+     "es": "Sala y comedor de concepto abierto, con piso tipo mármol y acabados en madera",
+     "en": "Open-plan living and dining area with marble-look flooring and wood finishes"
+    },
+    {
+     "src": "p-sala",
+     "cat": "depa",
+     "es": "Sala con ventanal hacia el área verde",
+     "en": "Living room with a large window onto the green space"
+    },
+    {
+     "src": "d2",
+     "cat": "depa",
+     "es": "Sala con persiana, aire acondicionado y TV",
+     "en": "Living room with roller shade, air conditioning and TV"
+    },
+    {
+     "src": "d8",
+     "cat": "depa",
+     "es": "Sala con mueble de TV en madera; al fondo, el comedor",
+     "en": "Living room with a wood media unit; dining area in the background"
+    },
+    {
+     "src": "d12",
+     "cat": "depa",
+     "es": "Sala y comedor con ventanal de piso a techo",
+     "en": "Living and dining area with a floor-to-ceiling window"
+    },
+    {
+     "src": "d22",
+     "cat": "depa",
+     "es": "Sala y comedor, vista general",
+     "en": "Living and dining area, general view"
+    },
+    {
+     "src": "p-comedor",
+     "cat": "depa",
+     "es": "Comedor para cuatro personas junto a la sala",
+     "en": "Four-seat dining area next to the living room"
+    },
+    {
+     "src": "d0",
+     "cat": "depa",
+     "es": "Comedor junto a la cocina integral",
+     "en": "Dining area next to the integrated kitchen"
+    },
+    {
+     "src": "d1",
+     "cat": "depa",
+     "es": "Comedor con barra de cocina al fondo",
+     "en": "Dining area with the kitchen counter in the background"
+    },
+    {
+     "src": "d4",
+     "cat": "depa",
+     "es": "Cocina abierta al comedor, con refrigerador",
+     "en": "Kitchen open to the dining area, with refrigerator"
+    },
+    {
+     "src": "d6",
+     "cat": "depa",
+     "es": "Comedor y sala con luz natural",
+     "en": "Dining and living areas with natural light"
+    },
+    {
+     "src": "d11",
+     "cat": "depa",
+     "es": "Cocina integral equipada con refrigerador, estufa y barra",
+     "en": "Fully equipped kitchen with refrigerator, stove and counter"
+    },
+    {
+     "src": "d14",
+     "cat": "depa",
+     "es": "Cocina con gabinetes en tono madera y barra de cubierta blanca",
+     "en": "Kitchen with wood-tone cabinets and a white-topped counter"
+    },
+    {
+     "src": "d7",
+     "cat": "depa",
+     "es": "Estufa y gabinetes altos y bajos de la cocina",
+     "en": "Stove and upper and lower kitchen cabinets"
+    },
+    {
+     "src": "d13",
+     "cat": "depa",
+     "es": "Barra de la cocina con tarja",
+     "en": "Kitchen counter with sink"
+    },
+    {
+     "src": "d15",
+     "cat": "depa",
+     "es": "Tarja doble con grifo flexible",
+     "en": "Double sink with flexible faucet"
+    },
+    {
+     "src": "p-rec-principal",
+     "cat": "depa",
+     "es": "Recámara principal",
+     "en": "Primary bedroom"
+    },
+    {
+     "src": "d3",
+     "cat": "depa",
+     "es": "Recámara principal con cabecera tapizada y pared a rayas",
+     "en": "Primary bedroom with upholstered headboard and striped accent wall"
+    },
+    {
+     "src": "d17",
+     "cat": "depa",
+     "es": "Recámara principal con iluminación cálida",
+     "en": "Primary bedroom with warm lighting"
+    },
+    {
+     "src": "d16",
+     "cat": "depa",
+     "es": "Walk-in closet con entrepaños, cajones y colgadores",
+     "en": "Walk-in closet with shelves, drawers and hanging rails"
+    },
+    {
+     "src": "p-rec-secundaria",
+     "cat": "depa",
+     "es": "Recámara secundaria",
+     "en": "Secondary bedroom"
+    },
+    {
+     "src": "d20",
+     "cat": "depa",
+     "es": "Recámara con clóset abierto y aire acondicionado",
+     "en": "Bedroom with open wardrobe and air conditioning"
+    },
+    {
+     "src": "d21",
+     "cat": "depa",
+     "es": "Recámara con ventana, persiana y aire acondicionado",
+     "en": "Bedroom with window, roller shade and air conditioning"
+    },
+    {
+     "src": "d18",
+     "cat": "depa",
+     "es": "Baño completo con regadera de cristal",
+     "en": "Full bathroom with glass-enclosed shower"
+    },
+    {
+     "src": "d19",
+     "cat": "depa",
+     "es": "Baño con lavabo sobre cubierta y regadera con mampara",
+     "en": "Bathroom with vessel sink on a countertop and glass-screen shower"
+    },
+    {
+     "src": "d9",
+     "cat": "depa",
+     "es": "Área de servicio con lavadero y calentador",
+     "en": "Utility area with wash sink and water heater"
+    },
+    {
+     "src": "d10",
+     "cat": "depa",
+     "es": "Área de servicio con instalaciones para lavadora",
+     "en": "Utility area with washing-machine hookups"
+    },
+    {
+     "src": "plano-amazona",
+     "cat": "planos",
+     "es": "Plano del modelo Amazonas: 3 recámaras, 2 baños, cocina integral y terraza o balcón",
+     "en": "Amazonas floor plan: 3 bedrooms, 2 bathrooms, integrated kitchen and terrace or balcony"
+    }
+   ]
+  }
+ ]
+}

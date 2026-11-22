@@ -1,32 +1,81 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
+  "routes": [
     {
-      "source": "/photos.bin",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2592000, immutable"
-        },
-        {
-          "key": "Accept-Ranges",
-          "value": "bytes"
-        }
-      ]
+      "src": "/photos.bin",
+      "headers": {
+        "Cache-Control": "public, max-age=2592000, immutable",
+        "Accept-Ranges": "bytes"
+      },
+      "continue": true
     },
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        }
-      ]
+      "src": "/sw.js",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Service-Worker-Allowed": "/"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(?:index(?:\\.html)?)?",
+      "dest": "/api/page?p=index"
+    },
+    {
+      "src": "/depa(?:\\.html)?",
+      "dest": "/api/page?p=depa"
+    },
+    {
+      "src": "/proyecto(?:\\.html)?",
+      "dest": "/api/page?p=proyecto"
+    },
+    {
+      "src": "/aviso-privacidad(?:\\.html)?",
+      "dest": "/api/page?p=aviso-privacidad"
+    },
+    {
+      "src": "/admin(?:\\.html)?",
+      "dest": "/api/page?p=admin"
+    },
+    {
+      "src": "/404(?:\\.html)?",
+      "dest": "/api/page?p=404"
+    },
+    {
+      "src": "/robots\\.txt",
+      "dest": "/api/page?p=robots"
+    },
+    {
+      "src": "/sitemap\\.xml",
+      "dest": "/api/page?p=sitemap"
+    },
+    {
+      "src": "/_[a-z-]+(?:\\.html)?",
+      "dest": "/api/page?p=404"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/api/page?p=404"
     }
-  ]
+  ],
+  "functions": {
+    "api/page.js": {
+      "includeFiles": "{_*.html,404.html,catalogo.json}"
+    },
+    "api/lead.js": {
+      "includeFiles": "catalogo.json",
+      "maxDuration": 20
+    }
+  }
 }
